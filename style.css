@@ -1,7 +1,6 @@
 /* fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
-/* reset css  */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -114,7 +113,7 @@ button {
   max-width: 537px;
 }
 
-/* future--content  */
+/* Future-content  */
 
 .future-title {
   font-weight: 700;
@@ -209,13 +208,6 @@ button {
   font-size: 65px;
   line-height: 70px;
 }
-/* ::::::::::::::::::::::::::::::::::::
-            future__info end 
-::::::::::::::::::::::::::::::::::::: */
-
-/* ::::::::::::::::::::::::::::::::::::
-            some__facts start
-::::::::::::::::::::::::::::::::::::: */
 .title {
   font-weight: 700;
   font-size: 45px;
@@ -275,18 +267,9 @@ button {
   color: var(--light-dark);
   font-weight: 600;
 }
-/* ::::::::::::::::::::::::::::::::::::
-            some__facts end
-::::::::::::::::::::::::::::::::::::: */
-
-/* ::::::::::::::::::::::::::::::::::::
-            sponspors start
-::::::::::::::::::::::::::::::::::::: */
-
 .sponspors {
-  margin-top: 180px;
+  margin-top: 130px;
 }
-
 .sponspor--details {
   max-width: 542px;
   margin: 0 auto 1.9rem;
@@ -304,78 +287,13 @@ button {
 }
 .sponspors__logos img {
   width: 100%;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+  -webkit-filter: grayscale(80%);
 }
 .logo--img {
   max-width: 181px;
 }
 
-/* ::::::::::::::::::::::::::::::::::::
-            sponspors end
-::::::::::::::::::::::::::::::::::::: */
-
-/* ::::::::::::::::::::::::::::::::::::
-           our__teams start
-::::::::::::::::::::::::::::::::::::: */
-
-.our__teams {
-  text-align: center;
-  margin-top: 6rem;
-}
-.our__teams .title {
-  margin-bottom: 3rem;
-}
-.our__teams hr {
-  width: 50%;
-  margin: 0 auto 2rem;
-  border: 1px solid orange;
-}
-/* team--members */
-.team--members {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-/* member */
-.member {
-  max-width: 250px;
-  max-height: 314px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-.member:hover .member--info {
-  visibility: visible;
-
-  transition: visibility, 1s;
-}
-.member img {
-  width: 100%;
-}
-/* member--info */
-.member--info {
-  text-align: center;
-  font-weight: 100;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffff;
-  background-color: hsla(0, 0%, 26%, 0.471);
-  border-radius: 6px;
-  visibility: hidden;
-}
-
-.member--info h2 {
-  font-weight: 100;
-}
-/* ::::::::::::::::::::::::::::::::::::
-            our__teams end
-::::::::::::::::::::::::::::::::::::: */
-
-/* ::::::::::::::::::::::::::::::::::::
-            Footer start
-::::::::::::::::::::::::::::::::::::: */
 .footer {
   height: 200px;
 }
@@ -391,11 +309,6 @@ button {
   margin: 0 auto;
   text-align: center;
 }
-/* ::::::::::::::::::::::::::::::::::::
-            Footer end
-::::::::::::::::::::::::::::::::::::: */
-
-/* /////////////////////////////////////////////////////// */
 
 /* mobile responsive */
 
@@ -437,20 +350,14 @@ button {
   }
   .facts__info,
   .sponspors__logos,
-  .team--members,
-  .future__Gallery {
+   .future__Gallery {
     grid-template-columns: 1fr;
     margin-left: 0.6rem;
   }
 
   .sponspors__logos,
-  .team--members {
-    gap: 1rem;
-    padding-left: 2rem;
-  }
   .sponspors {
-    margin: 0;
-  }
+    margin: 0;}
 
   .footer {
     padding: 0;
